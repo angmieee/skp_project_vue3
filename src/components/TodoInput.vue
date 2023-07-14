@@ -18,7 +18,7 @@ import { useStore } from 'vuex';
 const store = useStore();
 const inputModel = ref('');
 
-const onAdd = (e) => {
+const onAdd = e => {
     console.log('添加：');
     console.log(inputModel.value);
     // store.commit('todos/create', inputModel.value);
